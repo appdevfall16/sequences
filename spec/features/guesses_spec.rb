@@ -151,7 +151,7 @@ feature "The sequence form" do
 
     click_on "Check"
 
-    expect(page).to have_content("3, 6, 12 Yes!")
-    expect(page).to have_content("8, 4, 2 No.")
+    expect(page).to have_content(/3, 6, 12, yes/i))
+    expect(page).to have_content(/8, 4, 2, no/i))
   end
 end
